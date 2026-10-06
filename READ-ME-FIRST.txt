@@ -1,0 +1,77 @@
+GOD'S EYE VIEW - FREE EDITION
+=============================
+
+A free-keys edition of "God's Eye View" by Bilawal Sidhu (MIT license).
+Not affiliated with or endorsed by the original author.
+
+
+START (Windows)
+---------------
+1. Unzip this folder somewhere you will keep it (for example your Desktop).
+2. Double-click   START-HERE-WINDOWS.bat
+3. The first time it installs a few things (about 200 MB, a few minutes).
+4. Your browser opens the app.  Keep the black window open while you use it.
+   Close the black window to stop.
+
+If Windows says "Windows protected your PC": click "More info", then
+"Run anyway".  The file is a plain text script you can open in Notepad.
+
+You need Node.js (free).  If it is missing the script opens the download page
+for you.  Get the "LTS" version.
+
+
+ADD YOUR FREE API KEYS (optional - the app works without them)
+--------------------------------------------------------------
+Double-click   ADD-API-KEYS.bat   - it opens your key file in Notepad.
+
+Every key has its sign-up link written right above it.  Paste the key after
+the "=" sign, save (Ctrl+S), close Notepad, then restart the app.
+
+  1. 3D cities ........ Cesium ion    https://cesium.com/ion
+        also add the tiles once:      https://ion.cesium.com/assetdepot
+        token:                        https://ion.cesium.com/tokens
+  2. Voice ............ Google Gemini https://aistudio.google.com/apikey
+  3. AI summary line .. Groq          https://console.groq.com/keys
+  4. Live ships ....... AISStream     https://aisstream.io   (then /account)
+  5. Wildfires ........ NASA FIRMS    https://firms.modaps.eosdis.nasa.gov/api/map_key/
+  6. Live traffic ..... TomTom        https://my.tomtom.com/keys
+  7. More flights ..... OpenSky       https://opensky-network.org/my-opensky/account
+
+You can also click the POWER UP button inside the app: same keys, same links.
+
+
+USING VOICE
+-----------
+Click MIC, or hold SPACE, and talk:
+   "Take me to Tokyo."
+   "Switch to night vision and turn on the flights layer."
+   "How many flights are over Texas right now?"
+PRIVACY: on Google's free tier, what you say may be used by Google to improve
+its products and may be read by human reviewers.  Do not say anything private.
+
+
+MORE
+----
+README.md            setup, keys, troubleshooting
+docs\GUIDE.md        what the app can do: voice commands, layers, missions
+FREE-EDITION.md      what is different from the original, and what was tested
+LICENSE              MIT license + notices for third-party data (READ IT)
+
+
+macOS / Linux
+-------------
+Install Node.js 24 LTS (https://nodejs.org/en/download), then:
+  macOS:  double-click   START-HERE-MAC.command
+          (first time: right-click it, choose Open, then Open again)
+          keys:          ADD-API-KEYS-MAC.command
+  Linux:  in a terminal in this folder:   bash START-HERE-MAC-LINUX.sh
+          keys:                           bash ADD-API-KEYS.sh
+Built and tested on Windows; the macOS / Linux launchers were checked with
+bash on Windows, not on a real Mac or Linux machine.
+
+
+SLOW COMPUTER?
+--------------
+The app picks a lighter rendering quality by itself on a weak machine.
+To force the lightest one, add  ?quality=minimal  to the end of the address
+in the browser (?quality=auto goes back to automatic).
